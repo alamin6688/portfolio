@@ -13,8 +13,8 @@ const Navbar = () => {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `nav-link px-2 cursor-pointer capitalize hover:text-primary pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-primary" : ""
+          `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
+            isActive ? "text-white border-b-[#2b69be]" : ""
           }`
         }
       >
@@ -23,8 +23,8 @@ const Navbar = () => {
       <NavLink
         to="#about"
         className={({ isActive }) =>
-          `nav-link px-2 cursor-pointer capitalize hover:text-primary pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-primary" : ""
+          `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
+            isActive ? "text-white border-b-[#2b69be]" : ""
           }`
         }
       >
@@ -33,8 +33,8 @@ const Navbar = () => {
       <NavLink
         to="#work"
         className={({ isActive }) =>
-          `nav-link px-2 cursor-pointer capitalize hover:text-primary pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-primary" : ""
+          `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
+            isActive ? "text-white border-b-[#2b69be]" : ""
           }`
         }
       >
@@ -43,8 +43,8 @@ const Navbar = () => {
       <NavLink
         to="#reviews"
         className={({ isActive }) =>
-          `nav-link px-2 cursor-pointer capitalize hover:text-primary pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-primary" : ""
+          `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
+            isActive ? "text-white border-b-[#2b69be]" : ""
           }`
         }
       >
@@ -53,8 +53,8 @@ const Navbar = () => {
       <NavLink
         to="#contact"
         className={({ isActive }) =>
-          `nav-link px-2 cursor-pointer capitalize hover:text-primary pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-primary" : ""
+          `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
+            isActive ? "text-white border-b-[#2b69be]" : ""
           }`
         }
       >
@@ -64,7 +64,10 @@ const Navbar = () => {
   );
 
   return (
-    <div className="fixed top-0 left-0 w-full h-24 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0 px-6">
+    <div
+      id="navbar"
+      className="fixed top-0 left-0 w-full h-24 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0 px-6"
+    >
       <div className="max-w-screen-2xl mx-auto w-full flex items-center justify-between md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
         {/* Logo */}
         <div className="flex-shrink-0 flex justify-start">
@@ -72,17 +75,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center justify-center hover:shadow-lg duration-300 hover:scale-[1.25] transition-all"
           >
-            {/* <img
-              src="/src/images/logo.svg"
-              width={50}
-              height={50}
-              alt="Alamin"
-            /> */}
-            <IoLogoAmplify className="text-6xl text-[#3688b4] mr-2" />
-            {/* <span className="font-poppins text-4xl md:text-5xl flex items-end">
-              Dev
-              <GoDotFill className="text-sm mb-1 ml-1 text-[#3688b4]" />
-            </span> */}
+            <IoLogoAmplify className="text-6xl text-[#2b69be] mr-2" />
           </a>
         </div>
 
@@ -98,7 +91,7 @@ const Navbar = () => {
           </button>
 
           {/* Navigation Items (hidden on mobile, visible on medium and larger) */}
-          <div className="hidden md:flex items-center gap-4 bg-white bg-opacity-10 px-6 py-3 rounded-xl hover:shadow-lg duration-300 hover:scale-[1.05] transition-all">
+          <div className="hidden md:flex items-center gap-4 bg-zinc-900/90 px-6 py-3 rounded-xl hover:shadow-lg duration-300 hover:scale-[1.05] transition-all">
             {navLinks}
           </div>
         </div>
@@ -113,7 +106,7 @@ const Navbar = () => {
         {/* Contact Button (hidden on mobile) */}
         <div className="flex-shrink-0 flex justify-end">
           <Link to="#resume">
-            <button className="btn btn-primary hidden md:block">
+            <button className="btn bg-[#2b69be] text-white hidden md:block">
               <span className="flex items-center justify-center gap-2">
                 <FaDownload /> Resume
               </span>

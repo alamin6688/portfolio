@@ -4,13 +4,13 @@ import { ImLinkedin } from "react-icons/im";
 
 const Hero = () => {
   return (
-    <section className="pt-20 max-w-screen-2xl mx-auto w-full">
-      <div className="w-full bg-[#18181B] rounded-md relative flex flex-col items-center justify-center pb-12 px-6">
+    <section className="pt-20 bg-[#18181B]">
+      <div className="max-w-screen-2xl mx-auto w-full rounded-md relative flex flex-col items-center justify-center pb-12 px-6">
         {/* header */}
         <header className="mt-10 w-full md:text-center flex items-center justify-center">
           <div className="w-full md:w-3/4 mx-auto">
             <h1 className="text-[30px] sm:text-[60px] font-semibold leading-[40px] sm:leading-[80px]">
-              <span className="text-[#DC0155]">
+              <span className="text-[#2b69be]">
                 Hi there! <br />
               </span>{" "}
               I'm Fuade Hasan Alamin
@@ -74,7 +74,7 @@ const Hero = () => {
         </div>
 
         {/* right blur shadow */}
-        <div className="w-[100px] h-[100px] bg-[#DC0155] blur-[90px] absolute bottom-[80px] right-[80px]"></div>
+        <div className="w-[100px] h-[100px] bg-[#006aff] blur-[90px] absolute bottom-[80px] right-[80px]"></div>
       </div>
     </section>
   );
