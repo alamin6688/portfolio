@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaDownload } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { IoLogoAmplify, IoMenu } from "react-icons/io5";
@@ -7,12 +7,12 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [menu, setMenu] = useState("home");
+  const [activeLink, setActiveLink] = useState("home");
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      const offset = 50;
+      const offset = 50; // Adjust offset for fixed navbar height
       const sectionPosition =
         section.getBoundingClientRect().top + window.scrollY; // Get the absolute position
       const offsetPosition = sectionPosition - offset; // Subtract the offset
@@ -23,17 +23,21 @@ const Navbar = () => {
     }
   };
 
+  const handleNavClick = (id) => {
+    setActiveLink(id);
+    scrollToSection(id);
+  };
+
   const navLinks = (
     <>
       <NavLink
         to="/"
-        onClick={() => {
-          setMenu("home");
-          scrollToSection("home");
-        }}
+        onClick={() => handleNavClick("home")}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-[#2b69be]" : ""
+            activeLink === "home"
+              ? "text-white border-b-[#2b69be]"
+              : "text-zinc-50"
           }`
         }
       >
@@ -41,13 +45,12 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         to="#about"
-        onClick={() => {
-          setMenu("about");
-          scrollToSection("about");
-        }}
+        onClick={() => handleNavClick("about")}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-[#2b69be]" : ""
+            activeLink === "about"
+              ? "text-white border-b-[#2b69be]"
+              : "text-zinc-50"
           }`
         }
       >
@@ -55,27 +58,25 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         to="#work"
-        onClick={() => {
-          setMenu("works");
-          scrollToSection("works");
-        }}
+        onClick={() => handleNavClick("works")}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-[#2b69be]" : ""
+            activeLink === "works"
+              ? "text-white border-b-[#2b69be]"
+              : "text-zinc-50"
           }`
         }
       >
-        Works
+        My Works
       </NavLink>
       <NavLink
         to="#reviews"
-        onClick={() => {
-          setMenu("reviews");
-          scrollToSection("reviews");
-        }}
+        onClick={() => handleNavClick("reviews")}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-[#2b69be]" : ""
+            activeLink === "reviews"
+              ? "text-white border-b-[#2b69be]"
+              : "text-zinc-50"
           }`
         }
       >
@@ -83,13 +84,12 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         to="#contact"
-        onClick={() => {
-          setMenu("contact");
-          scrollToSection("contact");
-        }}
+        onClick={() => handleNavClick("contact")}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
-            isActive ? "text-white border-b-[#2b69be]" : ""
+            activeLink === "contact"
+              ? "text-white border-b-[#2b69be]"
+              : "text-zinc-50"
           }`
         }
       >
@@ -97,6 +97,11 @@ const Navbar = () => {
       </NavLink>
     </>
   );
+
+  // Set default active link when the component mounts
+  useEffect(() => {
+    setActiveLink("home");
+  }, []);
 
   return (
     <div
@@ -141,7 +146,7 @@ const Navbar = () => {
         {/* Contact Button (hidden on mobile) */}
         <div className="flex-shrink-0 flex justify-end">
           <Link to="#resume">
-            <button className="btn bg-[#2b69be] text-white hidden md:block">
+            <button className="btn bg-[#2b69be] hover:bg-[#07469e] text-white hidden md:block">
               <span className="flex items-center justify-center gap-2">
                 <FaDownload /> Resume
               </span>
