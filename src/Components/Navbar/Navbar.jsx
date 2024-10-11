@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaDownload } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
-import { IoMenu } from "react-icons/io5";
+import { IoLogoAmplify, IoMenu } from "react-icons/io5";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 
@@ -72,16 +72,17 @@ const Navbar = () => {
             href="/"
             className="flex items-center justify-center hover:shadow-lg duration-300 hover:scale-[1.25] transition-all"
           >
-            <img
+            {/* <img
               src="/src/images/logo.svg"
               width={50}
               height={50}
               alt="Alamin"
-            />
-            <span className="font-poppins text-2xl md:text-3xl flex items-end">
-              Alamin
+            /> */}
+            <IoLogoAmplify className="text-6xl text-[#3688b4] mr-2" />
+            {/* <span className="font-poppins text-4xl md:text-5xl flex items-end">
+              Dev
               <GoDotFill className="text-sm mb-1 ml-1 text-[#3688b4]" />
-            </span>
+            </span> */}
           </a>
         </div>
 
@@ -104,7 +105,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation (visible only if navOpen is true) */}
         {navOpen && (
-          <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-3/4 md:hidden flex flex-col items-center py-4 text-sm font-medium tracking-wide text-zinc-50/50 gap-4 bg-zinc-50/10 rounded-lg shadow-lg animate__animated animate__zoomIn">
+          <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-3/4 md:hidden flex flex-col items-center py-4 text-sm font-medium tracking-wide text-zinc-50/50 gap-4 bg-zinc-50/50 rounded-lg shadow-lg animate__animated animate__zoomIn">
             {navLinks}
           </div>
         )}
