@@ -105,7 +105,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation (visible only if navOpen is true) */}
         {navOpen && (
-          <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-3/4 md:hidden flex flex-col items-center py-4 text-sm font-medium tracking-wide text-zinc-50/50 gap-4 bg-zinc-50/50 rounded-lg shadow-lg animate__animated animate__zoomIn">
+          <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-3/4 md:hidden flex flex-col items-center py-4 text-sm font-medium tracking-wide text-zinc-50/50 gap-4 bg-zinc-900/90 rounded-lg shadow-xl animate__animated animate__zoomIn">
             {navLinks}
           </div>
         )}
