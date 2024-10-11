@@ -64,7 +64,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="fixed top-0 left-0 w-full h-24 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0 px-4">
+    <div className="fixed top-0 left-0 w-full h-24 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0 px-6">
       <div className="max-w-screen-2xl mx-auto w-full flex items-center justify-between md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
         {/* Logo */}
         <div className="flex-shrink-0 flex justify-start">
