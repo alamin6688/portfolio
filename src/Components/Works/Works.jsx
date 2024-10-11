@@ -113,7 +113,7 @@ const Works = () => {
     <section id="works" className="bg-[#18181B]">
       <div className="max-w-screen-2xl px-6 pt-4 pb-10 mx-auto">
         <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-4 md:py-8 text-zinc-200">
-          My Latest Work
+          My Latest Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 xl:mt-12 xl:gap-12  pb-6 lg:pb-8 animate__animated animate__zoomIn">
           {projects.map((project, index) => (
@@ -147,7 +147,7 @@ const Works = () => {
                   <h3 className="text-sm font-semibold text-white mb-2">
                     Description
                   </h3>
-                  <p className="text-xs text-white/70">{project.description}</p>
+                  <p className="text-sm text-white/70">{project.description}</p>
                 </div>
 
                 {/* Features */}
@@ -155,7 +155,7 @@ const Works = () => {
                   <h3 className="text-sm font-semibold text-white mb-2">
                     Key Features
                   </h3>
-                  <ul className="text-xs text-white/60 grid grid-cols-1 gap-1">
+                  <ul className="text-sm text-white/60 grid grid-cols-1 gap-1">
                     {project.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
                         <svg
