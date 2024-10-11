@@ -110,7 +110,7 @@ const projects = [
 
 const Works = () => {
   return (
-    <section id="projects" className="bg-[#18181B]">
+    <section id="works" className="bg-[#18181B]">
       <div className="max-w-screen-2xl px-6 pt-4 pb-10 mx-auto">
         <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-4 md:py-8 text-zinc-200">
           My Latest Work

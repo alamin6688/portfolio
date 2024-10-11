@@ -7,11 +7,30 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [menu, setMenu] = useState("home");
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const offset = 50;
+      const sectionPosition =
+        section.getBoundingClientRect().top + window.scrollY; // Get the absolute position
+      const offsetPosition = sectionPosition - offset; // Subtract the offset
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const navLinks = (
     <>
       <NavLink
         to="/"
+        onClick={() => {
+          setMenu("home");
+          scrollToSection("home");
+        }}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
             isActive ? "text-white border-b-[#2b69be]" : ""
@@ -22,6 +41,10 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         to="#about"
+        onClick={() => {
+          setMenu("about");
+          scrollToSection("about");
+        }}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
             isActive ? "text-white border-b-[#2b69be]" : ""
@@ -32,16 +55,24 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         to="#work"
+        onClick={() => {
+          setMenu("works");
+          scrollToSection("works");
+        }}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
             isActive ? "text-white border-b-[#2b69be]" : ""
           }`
         }
       >
-        Work
+        Works
       </NavLink>
       <NavLink
         to="#reviews"
+        onClick={() => {
+          setMenu("reviews");
+          scrollToSection("reviews");
+        }}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
             isActive ? "text-white border-b-[#2b69be]" : ""
@@ -52,6 +83,10 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         to="#contact"
+        onClick={() => {
+          setMenu("contact");
+          scrollToSection("contact");
+        }}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
             isActive ? "text-white border-b-[#2b69be]" : ""

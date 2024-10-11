@@ -4,7 +4,7 @@ import { ImLinkedin } from "react-icons/im";
 
 const Hero = () => {
   return (
-    <section className="pt-20 bg-[#18181B]">
+    <section id="home" className="pt-20 bg-[#18181B]">
       <div className="max-w-screen-2xl mx-auto w-full rounded-md relative flex flex-col items-center justify-center pb-12 px-6">
         {/* header */}
         <header className="mt-10 w-full md:text-center flex items-center justify-center">
