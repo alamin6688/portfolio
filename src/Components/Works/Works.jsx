@@ -1,4 +1,5 @@
 import React from "react";
+import { BsEyeFill, BsInfoCircleFill } from "react-icons/bs";
 
 const projects = [
   {
@@ -12,6 +13,7 @@ const projects = [
       "Profile management for freelancers and clients.",
     ],
     liveLink: "https://job-wave.netlify.app",
+    sourceCode: "https://github.com/alamin6688/job-wave-client.git",
     technologies: ["React", "Node.js", "MongoDB", "Firebase"],
     tools: ["Tailwind CSS", "Socket.io", "JWT Authentication"],
     status: "Completed",
@@ -27,6 +29,7 @@ const projects = [
       "User-driven query management with JWT authentication.",
     ],
     liveLink: "https://query-hub-web.netlify.app",
+    sourceCode: "https://github.com/alamin6688/query-hub.git",
     technologies: ["React", "Node.js", "MongoDB", "Firebase"],
     tools: ["Tailwind CSS", "Axios", "JWT Authentication"],
     status: "Completed",
@@ -42,6 +45,7 @@ const projects = [
       "User reviews and feedback integration.",
     ],
     liveLink: "https://nexus-travel.netlify.app",
+    sourceCode: "https://github.com/alamin6688/nexus-travel-client.git",
     technologies: ["React", "Node.js", "MongoDB", "Firebase"],
     tools: ["Tailwind CSS", "Axios", "JWT Authentication"],
     status: "Completed",
@@ -59,6 +63,7 @@ const projects = [
       "Integration with social media for easy sharing.",
     ],
     liveLink: "https://tech-blaze.netlify.app",
+    sourceCode: "https://github.com/alamin6688/tech-blaze-client.git",
     technologies: ["React", "Node.js", "MongoDB", "Firebase"],
     tools: ["Tailwind CSS", "Axios", "Express.js"],
     status: "Completed",
@@ -77,6 +82,7 @@ const projects = [
       "Recipe details with step-by-step instructions and ingredient lists.",
     ],
     liveLink: "https://recipe-cafe.netlify.app",
+    sourceCode: "https://github.com/alamin6688/recipe-cafe.git",
     technologies: ["React", "Node.js", "MongoDB", "Firebase"],
     tools: ["Tailwind CSS", "Axios", "Express.js"],
     status: "Completed",
@@ -95,6 +101,7 @@ const projects = [
       "Responsive design for all devices.",
     ],
     liveLink: "https://book-store-hub.netlify.app",
+    sourceCode: "https://github.com/alamin6688/book-store.git",
     technologies: ["React", "Node.js", "MongoDB", "Firebase"],
     tools: ["Tailwind CSS", "Axios", "Express.js"],
     status: "Completed",
@@ -193,45 +200,24 @@ const Works = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex justify-between items-center space-x-2">
-                  <button className="flex-1 bg-white/10 text-white/90 rounded-lg px-3 py-2 text-xs font-medium transition duration-300 ease-in-out hover:bg-white/20 flex items-center justify-center border border-white/20">
-                    <svg
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="h-4 w-4 mr-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14 3H7a2 2 0 00-2 2v16l5-5h6a2 2 0 002-2V5a2 2 0 00-2-2z"
-                        strokeWidth="2"
-                        strokeLinejoin="round"
-                        strokeLinecap="round"
-                      ></path>
-                    </svg>
-                    Comment
-                  </button>
+                <div className="flex justify-between items-center space-x-4">
+                  <a
+                    href={project.sourceCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 gap-2 bg-white/20 text-white rounded-lg px-3 py-2 text-sm font-medium transition duration-300 ease-in-out hover:bg-white/30 flex items-center justify-center"
+                  >
+                    <BsInfoCircleFill />
+                    Source Code
+                  </a>
 
                   <a
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 bg-white/20 text-white rounded-lg px-3 py-2 text-xs font-medium transition duration-300 ease-in-out hover:bg-white/30 flex items-center justify-center"
+                    className="flex-1 gap-2 bg-white/20 text-white rounded-lg px-3 py-2 text-sm font-medium transition duration-300 ease-in-out hover:bg-white/30 flex items-center justify-center"
                   >
-                    <svg
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="h-4 w-4 mr-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 4.5C6.75 4.5 2.25 9 2.25 12s4.5 7.5 9.75 7.5 9.75-4.5 9.75-7.5S17.25 4.5 12 4.5zm0 12c-2.25 0-4.5-2.25-4.5-4.5S9.75 8.5 12 8.5s4.5 2.25 4.5 4.5-2.25 4.5-4.5 4.5z"
-                        strokeWidth="2"
-                        strokeLinejoin="round"
-                        strokeLinecap="round"
-                      ></path>
-                    </svg>
+                    <BsEyeFill />
                     Live Site
                   </a>
                 </div>
