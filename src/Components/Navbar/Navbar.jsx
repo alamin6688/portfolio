@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaDownload } from "react-icons/fa";
-import { GoDotFill } from "react-icons/go";
 import { IoLogoAmplify, IoMenu } from "react-icons/io5";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
@@ -70,8 +69,8 @@ const Navbar = () => {
         My Works
       </NavLink>
       <NavLink
-        to="#reviews"
-        onClick={() => handleNavClick("reviews")}
+        to="#skills"
+        onClick={() => handleNavClick("skills")}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
             activeLink === "reviews"
@@ -80,7 +79,7 @@ const Navbar = () => {
           }`
         }
       >
-        Reviews
+        Skills
       </NavLink>
       <NavLink
         to="#contact"
