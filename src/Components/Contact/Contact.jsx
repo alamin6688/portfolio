@@ -11,8 +11,8 @@ const Contact = () => {
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-1/2  w-full">
-            <h1 className="text-2xl font-semibold text-zinc-200 lg:text-3xl">
-              Contact me for <br /> collaboration
+            <h1 className="text-2xl font-semibold text-zinc-200 lg:text-3xl capitalize text-center md:text-left">
+              Contact me for collaboration
             </h1>
 
             <div className="mt-6 space-y-8 md:mt-8">

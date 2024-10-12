@@ -34,7 +34,7 @@ const Hero = () => {
                 target="_blank"
                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
               >
-                <ImLinkedin className="w-10 h-10" />
+                <ImLinkedin className="w-8 h-8" />
               </a>
             </li>
             {/* Github Icon */}
@@ -44,14 +44,14 @@ const Hero = () => {
                 target="_blank"
                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
               >
-                <FaGithub className="w-10 h-10" />
+                <FaGithub className="w-8 h-8" />
               </a>
             </li>
 
             {/* Resume Download Button */}
             <li>
               <a href="#" target="_blank">
-                <button class="cursor-pointer flex justify-center gap-2 bg-gray-800 px-3 py-3 rounded-full text-white  tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[130px]">
+                <button class="cursor-pointer flex justify-center gap-2 bg-gray-800 px-3 py-2 rounded-full text-white  tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[130px]">
                   Resume
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaDownload } from "react-icons/fa";
+import { HiRectangleGroup } from "react-icons/hi2";
 import { IoLogoAmplify, IoMenu } from "react-icons/io5";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
@@ -114,7 +115,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center justify-center hover:shadow-lg duration-300 hover:scale-[1.25] transition-all"
           >
-            <IoLogoAmplify className="text-6xl text-[#2b69be] mr-2" />
+            <IoLogoAmplify className="text-6xl text-[#0a61db] mr-2 bg-zinc-100 px-1 rounded-2xl" />
           </a>
         </div>
 
@@ -137,7 +138,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation (visible only if navOpen is true) */}
         {navOpen && (
-          <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-3/4 md:hidden flex flex-col items-center py-4 text-sm font-medium tracking-wide text-zinc-50/50 gap-4 bg-zinc-900/90 rounded-lg shadow-xl animate__animated animate__zoomIn">
+          <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-3/4 md:hidden flex flex-col items-center py-4 text-xl font-medium font-poppins tracking-wide text-zinc-50/50 gap-4 bg-zinc-900/95 rounded-lg shadow-2xl animate__animated animate__zoomIn">
             {navLinks}
           </div>
         )}
@@ -147,7 +148,7 @@ const Navbar = () => {
           <Link to="#resume">
             <button className="btn bg-[#2b69be] hover:bg-[#07469e] text-white hidden md:block">
               <span className="flex items-center justify-center gap-2">
-                <FaDownload /> Resume
+                <HiRectangleGroup className="text-xl" /> Hire Me
               </span>
             </button>
           </Link>

@@ -3,31 +3,89 @@ import React from "react";
 const About = () => {
   return (
     <section id="about" className="bg-[#18181B]">
-      <div className="max-w-screen-2xl px-6 w-full pt-4 pb-12 mx-auto">
+      <div className="max-w-screen-2xl w-full pt-4 pb-12 mx-auto">
         <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-4 md:py-8 text-zinc-200">
           About Me
         </h1>
-        <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 mt-6">
-          <div className="w-full md:max-w-xs overflow-hidden bg-white rounded-2xl shadow-lg">
-            <img
-              className="object-cover w-full h-52"
-              src="https://i.postimg.cc/W3b5kTjT/IMG20230806161044-1.jpg"
-              alt="Alamin"
-            />
 
-            <div className="py-5 text-center bg-[#1C2129]">
-              <a
-                href="#"
-                className="block text-xl font-bold"
-                tabIndex="0"
-                role="link"
-              >
-                Fuade Hasan Alamin
-              </a>
-              <span className="text-sm text-white/70">Frontend Developer</span>
+        <div className="flex items-center justify-between mt-12">
+          <div className="w-full lg:w-3/4 mx-auto flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-16 px-6">
+            {/* Card */}
+            <div class="flex items-center justify-center hover:shadow-[0_0_30px_rgba(0,183,255,0.5)] duration-300 hover:scale-[1.05] transition-all">
+              <div class="w-64 rounded-lg border-2 border-[#2B69BE] bg-transparent p-4 text-center shadow-lg dark:bg-[#1F2937]">
+                <div className="flex items-center justify-center">
+                  <img
+                    className="object-cover w-52 h-52 rounded-full"
+                    src="https://i.postimg.cc/W3b5kTjT/IMG20230806161044-1.jpg"
+                    alt="Alamin"
+                  />
+                </div>
+
+                <h2 class="mt-4 text-xl font-bold text-zinc-200 font-poppins">
+                  Fuade Hasan Alamin
+                </h2>
+                <p class="pt-1 pb-4 text-zinc-300 font-poppins">
+                  Frontend Developer
+                </p>
+              </div>
+            </div>
+
+            {/* Progress Bar */}
+
+            <div className="w-full md:w-3/4 mx-auto duration-300 hover:scale-[1.05] transition-all p-4">
+              <div className="space-y-6">
+                <div>
+                  <div className="flex items-center  justify-between">
+                    <p className="text-zinc-200 font-poppins">
+                      Web Development
+                    </p>
+                    <p className="text-zinc-200 font-poppins tracking-wider">
+                      90%
+                    </p>
+                  </div>
+
+                  <progress
+                    className="progress progress-info w-full"
+                    value="90"
+                    max="100"
+                  ></progress>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-zinc-200 font-poppins">Graphic Design</p>
+                    <p className="text-zinc-200 font-poppins tracking-wider">
+                      60%
+                    </p>
+                  </div>
+                  <progress
+                    className="progress progress-success w-full"
+                    value="60"
+                    max="100"
+                  ></progress>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-zinc-200 font-poppins"> UI/UX Design</p>{" "}
+                    <p className="text-zinc-200 font-poppins tracking-wider">
+                      70%
+                    </p>
+                  </div>
+                  <progress
+                    className="progress progress-primary w-full "
+                    value="70"
+                    max="100"
+                  ></progress>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="bg-[#1F2937]/50 p-6 rounded-2xl space-y-4">
+        </div>
+
+        {/* Info Description */}
+        <div className="px-6">
+          <div className="space-y-4 mt-12 py-14 w-full bg-[#1F2937] px-4 rounded-2xl duration-300 hover:scale-[1.05] transition-all">
             <p className="text-lg text-zinc-300 tracking-wide">
               Hi! I'm a Frontend Developer with a passionate love for creating
               amazing user experiences. I believe in being punctual and
