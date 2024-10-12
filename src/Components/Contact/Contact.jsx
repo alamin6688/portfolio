@@ -6,11 +6,11 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-[#18181B]">
       <div className="max-w-screen-2xl px-6 w-full pt-4 pb-12 mx-auto">
-        <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-4 md:py-8 text-zinc-200">
+        <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-6 md:py-8 text-zinc-200">
           Get In Touch
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center">
-          <div className="lg:w-1/2 lg:mx-6 w-full">
+          <div className="md:w-1/2  w-full">
             <h1 className="text-2xl font-semibold text-zinc-200 lg:text-3xl">
               Contact me for <br /> collaboration
             </h1>
@@ -147,7 +147,7 @@ const Contact = () => {
               </ul>
             </div>
           </div>
-          <div className="mt-12 lg:w-1/2 lg:mx-6 w-full lg:mt-0">
+          <div className="pt-12 lg:w-1/2 w-full lg:mt-0">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <h2 className="text-2xl font-semibold text-zinc-200 ">
                 Let's Work Togther!

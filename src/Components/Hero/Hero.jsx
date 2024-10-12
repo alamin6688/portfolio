@@ -15,8 +15,8 @@ const Hero = () => {
               </span>{" "}
               I'm Fuade Hasan Alamin
             </h1>
-            <h2 className="text-2xl text-zinc-200  font-poppins py-4 tracking-wide">
-              A Frontend Developer specializing in the MERN stack.
+            <h2 className="text-2xl text-zinc-200  font-poppins py-4 tracking-wide capitalize">
+              A Frontend Developer specialized in the MERN stack.
             </h2>
             <p className="mt-2 text-[1rem] text-zinc-400 font-poppins tracking-wider  w-full md:w-[80%] mx-auto">
               I build and develop seamless websites using React, Tailwind CSS,
