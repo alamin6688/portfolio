@@ -115,7 +115,7 @@ const Works = () => {
         <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-4 md:py-8 text-zinc-200">
           My Latest Projects
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 xl:mt-12 xl:gap-12  pb-6 lg:pb-8 animate__animated animate__zoomIn">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 xl:mt-12 xl:gap-12 pb-4 md:pb-0 animate__animated animate__zoomIn">
           {projects.map((project, index) => (
             <div
               key={index}

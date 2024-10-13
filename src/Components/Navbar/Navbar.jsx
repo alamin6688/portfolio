@@ -57,7 +57,20 @@ const Navbar = () => {
         About
       </NavLink>
       <NavLink
-        to="#work"
+        to="#skills"
+        onClick={() => handleNavClick("skills")}
+        className={({ isActive }) =>
+          `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
+            activeLink === "skills"
+              ? "text-white border-b-[#2b69be]"
+              : "text-zinc-50"
+          }`
+        }
+      >
+        Skills
+      </NavLink>
+      <NavLink
+        to="#works"
         onClick={() => handleNavClick("works")}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
@@ -70,17 +83,17 @@ const Navbar = () => {
         My Works
       </NavLink>
       <NavLink
-        to="#skills"
-        onClick={() => handleNavClick("skills")}
+        to="#blogs"
+        onClick={() => handleNavClick("blogs")}
         className={({ isActive }) =>
           `nav-link px-2 cursor-pointer capitalize hover:text-[#2b69be] pb-1 border-b-[2px] border-transparent ${
-            activeLink === "reviews"
+            activeLink === "blogs"
               ? "text-white border-b-[#2b69be]"
               : "text-zinc-50"
           }`
         }
       >
-        Skills
+        Blogs
       </NavLink>
       <NavLink
         to="#contact"
@@ -145,7 +158,7 @@ const Navbar = () => {
 
         {/* Contact Button (hidden on mobile) */}
         <div className="flex-shrink-0 flex justify-end">
-          <Link to="#resume">
+          <Link to="#contact" onClick={() => handleNavClick("contact")}>
             <button className="btn bg-[#2b69be] hover:bg-[#07469e] text-white hidden md:block">
               <span className="flex items-center justify-center gap-2">
                 <HiRectangleGroup className="text-xl" /> Hire Me

@@ -34,7 +34,7 @@ const About = () => {
 
             <div className="w-full md:w-3/4 mx-auto duration-300 hover:scale-[1.05] transition-all p-4">
               <div className="space-y-6">
-                <p className="text-2xl text-zinc-200 font-poppins tracking-wide capitalize text-center">
+                <p className="text-2xl text-zinc-200 font-poppins tracking-wide capitalize text-center md:text-left">
                   What I do
                 </p>
                 <div>
