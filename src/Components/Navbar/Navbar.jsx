@@ -112,7 +112,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex-shrink-0 flex justify-start">
           <a
-            href="/"
+            href="#home"
             className="flex items-center justify-center hover:shadow-lg duration-300 hover:scale-[1.25] transition-all"
           >
             <IoLogoAmplify className="text-6xl text-[#0a61db] mr-2 bg-zinc-100 px-1 rounded-2xl" />

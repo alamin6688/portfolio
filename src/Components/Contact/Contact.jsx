@@ -5,7 +5,7 @@ import { ImLinkedin } from "react-icons/im";
 const Contact = () => {
   return (
     <section id="contact" className="bg-[#18181B]">
-      <div className="max-w-screen-2xl px-6 w-full pt-4 pb-12 mx-auto">
+      <div className="max-w-screen-2xl px-6 w-full pt-4 pb-16 md:pb-20 mx-auto">
         <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-6 md:py-8 text-zinc-200">
           Get In Touch
         </h1>

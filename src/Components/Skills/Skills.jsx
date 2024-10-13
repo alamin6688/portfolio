@@ -36,7 +36,7 @@ const Skills = () => {
     },
     {
       id: 7,
-      name: "Tailwind CSS",
+      name: "Tailwind",
       image: "https://i.postimg.cc/kMVF18WP/icons8-tailwind-css-48.png",
     },
     {

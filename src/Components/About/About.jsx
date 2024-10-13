@@ -34,9 +34,12 @@ const About = () => {
 
             <div className="w-full md:w-3/4 mx-auto duration-300 hover:scale-[1.05] transition-all p-4">
               <div className="space-y-6">
+                <p className="text-2xl text-zinc-200 font-poppins tracking-wide capitalize text-center">
+                  What I do
+                </p>
                 <div>
                   <div className="flex items-center  justify-between">
-                    <p className="text-zinc-200 font-poppins">
+                    <p className="text-zinc-200 font-poppins tracking-wider">
                       Web Development
                     </p>
                     <p className="text-zinc-200 font-poppins tracking-wider">
@@ -53,7 +56,9 @@ const About = () => {
 
                 <div>
                   <div className="flex items-center justify-between">
-                    <p className="text-zinc-200 font-poppins">Graphic Design</p>
+                    <p className="text-zinc-200 font-poppins tracking-wider">
+                      Graphic Design
+                    </p>
                     <p className="text-zinc-200 font-poppins tracking-wider">
                       60%
                     </p>
@@ -67,7 +72,10 @@ const About = () => {
 
                 <div>
                   <div className="flex items-center justify-between">
-                    <p className="text-zinc-200 font-poppins"> UI/UX Design</p>{" "}
+                    <p className="text-zinc-200 font-poppins tracking-wider">
+                      {" "}
+                      UI/UX Design
+                    </p>{" "}
                     <p className="text-zinc-200 font-poppins tracking-wider">
                       70%
                     </p>
@@ -86,6 +94,9 @@ const About = () => {
         {/* Info Description */}
         <div className="px-6">
           <div className="space-y-4 mt-12 py-14 w-full bg-[#1F2937] px-4 rounded-2xl duration-300 hover:scale-[1.05] transition-all">
+            <h2 className="text-2xl text-zinc-200  font-poppins tracking-wide capitalize text-center pb-2">
+              Why Choose Me
+            </h2>
             <p className="text-lg text-zinc-300 tracking-wide">
               Hi! I'm a Frontend Developer with a passionate love for creating
               amazing user experiences. I believe in being punctual and

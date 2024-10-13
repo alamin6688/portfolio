@@ -10,9 +10,9 @@ const Hero = () => {
         <header className="mt-10 w-full md:text-center flex items-center justify-center">
           <div className="w-full md:w-3/4 mx-auto">
             <h1 className="text-[30px] sm:text-[60px] font-semibold leading-[40px] sm:leading-[80px]">
-              <span className="text-[#2b69be]">
-                Hi there! <br />
-              </span>{" "}
+              <span className="text-[#2b7ae9]">
+                Hello! <br />
+              </span>
               I'm Fuade Hasan Alamin
             </h1>
             <h2 className="text-2xl text-zinc-200  font-poppins py-4 tracking-wide capitalize">
