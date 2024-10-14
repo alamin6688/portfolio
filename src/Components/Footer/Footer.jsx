@@ -16,7 +16,7 @@ const Footer = () => {
               <IoLogoAmplify className="text-4xl text-[#0a61db] mr-2 bg-zinc-100 px-1 rounded-lg" />
             </a>
           </div>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+          <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end hover:shadow-xl duration-300 hover:scale-[1.15] transition-all">
           <a
