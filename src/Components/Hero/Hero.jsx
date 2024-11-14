@@ -50,7 +50,10 @@ const Hero = () => {
 
             {/* Resume Download Button */}
             <li>
-              <a href="#" target="_blank">
+              <a
+                href="https://drive.google.com/file/d/1UEylT5h3rivwBGprB97GWHwp0XMOdy_i/view?usp=sharing"
+                target="_blank"
+              >
                 <button class="cursor-pointer flex justify-center gap-2 bg-gray-800 px-3 py-2 rounded-full text-white  tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[130px]">
                   Resume
                   <svg

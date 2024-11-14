@@ -85,7 +85,10 @@ const Contact = () => {
             <div className="flex items-center justify-start gap-4 w-full mt-4 md:mt-6">
               <ul className="flex items-center justify-center space-x-4">
                 <li>
-                  <a href="#" target="_blank">
+                  <a
+                    href="https://drive.google.com/file/d/1UEylT5h3rivwBGprB97GWHwp0XMOdy_i/view?usp=sharing"
+                    target="_blank"
+                  >
                     <button className="flex justify-center gap-2 bg-gray-800 px-3 py-3 rounded-full text-white shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 w-[140px]">
                       Resume
                       <svg
@@ -106,7 +109,10 @@ const Contact = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank">
+                  <a
+                    href="https://drive.google.com/file/d/1wkeanCJbqCWDxVrtoFxfe3Cqd5AjBV0b/view?usp=sharing"
+                    target="_blank"
+                  >
                     <button className="flex justify-center gap-2 bg-gray-800 px-3 py-3 rounded-full text-white shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 w-[100px]">
                       CV
                       <svg
