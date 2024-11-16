@@ -110,16 +110,16 @@ const projects = [
 
 const Works = () => {
   return (
-    <section id="works" className="bg-[#18181B]">
+    <section id="works" className="bg-[#0D1224]">
       <div className="max-w-screen-2xl px-6 pt-4 pb-10 mx-auto">
-        <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-4 md:py-8 text-zinc-200">
+        <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase py-4 md:py-8 text-zinc-200">
           My Latest Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 xl:mt-12 xl:gap-12 pb-4 md:pb-0 animate__animated animate__zoomIn">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card w-full h-auto bg-[#1F2937] rounded-2xl overflow-hidden relative  hover:shadow-[0_0_30px_rgba(0,183,255,0.5)] duration-300 hover:scale-[1.05] transition-all"
+              className="card w-full h-auto bg-[#0b1129] rounded-2xl overflow-hidden relative  hover:border-[#7f48e6] hover:shadow-[0_0_30px_rgba(127,72,230,0.5)] duration-300 hover:scale-[1.05] transition-all border-4 border-[#45428d]"
             >
               <div className="card-content p-6 md:p-8 relative z-10">
                 {/* Project Title and Status */}
@@ -131,15 +131,6 @@ const Works = () => {
                     {project.websiteName}
                   </h2>
                   <p className="text-xl pt-2 text-white/70">{project.title}</p>
-                  <span
-                    className={`text-xs font-medium px-2 py-0.5 rounded-full mt-2 inline-block ${
-                      project.status === "Completed"
-                        ? "bg-green-500/20 text-green-300/90"
-                        : "bg-yellow-500/20 text-yellow-300/90"
-                    }`}
-                  >
-                    {project.status}
-                  </span>
                 </div>
 
                 {/* Project Description */}

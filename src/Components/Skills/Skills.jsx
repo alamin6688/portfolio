@@ -68,9 +68,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="bg-[#18181B]">
+    <section id="skills" className="bg-[#0D1224]">
       <div className="max-w-screen-2xl px-6 w-full pt-4 pb-12 mx-auto">
-        <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase lg:text-4xl py-4 md:py-8 text-zinc-200">
+        <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase py-4 md:py-8 text-zinc-200">
           My Skills
         </h1>
 
@@ -84,7 +84,7 @@ const Skills = () => {
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className="flex flex-col items-center justify-center gap-4 bg-[#1F2937] rounded-2xl overflow-hidden relative  hover:shadow-[0_0_30px_rgba(0,183,255,0.5)] duration-300 hover:scale-[1.05] transition-all p-4"
+              className="flex flex-col items-center justify-center gap-4 bg-[#11152C] rounded-2xl overflow-hidden relative border-2 border-[#45428d] hover:border-[#7f48e6] hover:shadow-[0_0_30px_rgba(127,72,230,0.2)] duration-300 hover:scale-[1.15] transition-all p-4"
             >
               <img src={skill.image} alt={skill.name} className="w-16" />
               <p className="text-2xl text-center tracking-wider text-zinc-200">
