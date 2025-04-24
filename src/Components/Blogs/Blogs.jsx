@@ -8,7 +8,7 @@ const Blogs = () => {
         <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase py-4 md:py-8 text-zinc-200 tracking-wider mb-10">
           Blogs
         </h1>
-        <div>
+        <div data-aos="zoom-out" data-aos-duration="2000">
           <article className="flex transition bg-[#0D1224] shadow-[0_0_30px_rgba(127,72,230,0.5)] rounded-lg">
             <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
               <time

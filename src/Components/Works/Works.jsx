@@ -6,10 +6,10 @@ const projects = [
     websiteName: "Job Wave",
     title: "Freelance Marketplace",
     description:
-      "An online marketplace connecting freelancers and clients, featuring job posting, bidding, and real-time chat functionality.",
+      "An online marketplace connecting freelancers and clients, featuring job posting, bidding and real-time chat functionality.",
     features: [
+      "Implemented search and sorting functionality.",
       "Job posting and bidding system.",
-      "Real-time chat between freelancers and clients.",
       "Profile management for freelancers and clients.",
     ],
     liveLink: "https://job-wave.netlify.app",
@@ -24,9 +24,9 @@ const projects = [
     description:
       "A dynamic system where users can add, update, and delete product queries, with recommendations and personalized filtering.",
     features: [
-      "Dark/light theme toggle.",
+      "Manage product queries and recommendations.",
       "Search functionality with dynamic sections.",
-      "User-driven query management with JWT authentication.",
+      "Query management with JWT authentication.",
     ],
     liveLink: "https://query-hub-web.netlify.app",
     sourceCode: "https://github.com/alamin6688/query-hub.git",
@@ -34,33 +34,32 @@ const projects = [
     tools: ["Tailwind CSS", "Axios", "JWT Authentication"],
     status: "Completed",
   },
-  {
-    websiteName: "Nexus Travel",
-    title: "Tourism Management Platform",
-    description:
-      "A travel website offering destination guides, real-time booking updates, and itinerary planning features, customized for travel businesses.",
-    features: [
-      "Custom travel itineraries.",
-      "Seamless booking experience with live updates.",
-      "User reviews and feedback integration.",
-    ],
-    liveLink: "https://nexus-travel.netlify.app",
-    sourceCode: "https://github.com/alamin6688/nexus-travel-client.git",
-    technologies: ["React", "Node.js", "MongoDB", "Firebase"],
-    tools: ["Tailwind CSS", "Axios", "JWT Authentication"],
-    status: "Completed",
-  },
+  // {
+  //   websiteName: "Nexus Travel",
+  //   title: "Tourism Management Platform",
+  //   description:
+  //     "A travel website offering destination guides, real-time booking updates, and itinerary planning features, customized for travel businesses.",
+  //   features: [
+  //     "Custom travel itineraries.",
+  //     "Seamless booking experience with live updates.",
+  //     "User reviews and feedback integration.",
+  //   ],
+  //   liveLink: "https://nexus-travel.netlify.app",
+  //   sourceCode: "https://github.com/alamin6688/nexus-travel-client.git",
+  //   technologies: ["React", "Node.js", "MongoDB", "Firebase"],
+  //   tools: ["Tailwind CSS", "Axios", "JWT Authentication"],
+  //   status: "Completed",
+  // },
   {
     websiteName: "Tech Blaze",
     title: "Blog Website",
     description:
       "A modern blog platform that allows users to read, comment, and share tech-related articles. It features user authentication, article categorization, and a responsive design.",
     features: [
-      "User authentication for reading and posting comments.",
       "Article categorization by tags and topics.",
-      "Responsive design for both mobile and desktop views.",
-      "Real-time comment section with user interactions.",
-      "Integration with social media for easy sharing.",
+      "Real-time dynamic updated contents.",
+      "User feedback system and bookmarking.",
+      // "Responsive design for both mobile, tablet and desktop views.",
     ],
     liveLink: "https://tech-blaze.netlify.app",
     sourceCode: "https://github.com/alamin6688/tech-blaze-client.git",
@@ -68,37 +67,35 @@ const projects = [
     tools: ["Tailwind CSS", "Axios", "Express.js"],
     status: "Completed",
   },
-  {
-    websiteName: "Recipe Cafe",
-    title: "Recipe Sharing Platform",
-    description:
-      "An interactive platform for food enthusiasts to discover, share, and explore a wide variety of recipes. Features include user submissions, recipe categorization, and a favorites section.",
-    features: [
-      "Browse and search recipes by ingredients or categories.",
-      "Submit and share your own recipes with the community.",
-      "Add recipes to your favorites for quick access.",
-      "Responsive design optimized for both mobile and desktop users.",
-      "User ratings and comments on recipes.",
-      "Recipe details with step-by-step instructions and ingredient lists.",
-    ],
-    liveLink: "https://recipe-cafe.netlify.app",
-    sourceCode: "https://github.com/alamin6688/recipe-cafe.git",
-    technologies: ["React", "Node.js", "MongoDB", "Firebase"],
-    tools: ["Tailwind CSS", "Axios", "Express.js"],
-    status: "Completed",
-  },
+  // {
+  //   websiteName: "Recipe Cafe",
+  //   title: "Recipe Sharing Platform",
+  //   description:
+  //     "An interactive platform for food enthusiasts to discover, share, and explore a wide variety of recipes. Features include user submissions, recipe categorization, and a favorites section.",
+  //   features: [
+  //     "Browse and search recipes by ingredients or categories.",
+  //     "Submit and share your own recipes with the community.",
+  //     "Add recipes to your favorites for quick access.",
+  //     "Responsive design optimized for both mobile and desktop users.",
+  //     "User ratings and comments on recipes.",
+  //     "Recipe details with step-by-step instructions and ingredient lists.",
+  //   ],
+  //   liveLink: "https://recipe-cafe.netlify.app",
+  //   sourceCode: "https://github.com/alamin6688/recipe-cafe.git",
+  //   technologies: ["React", "Node.js", "MongoDB", "Firebase"],
+  //   tools: ["Tailwind CSS", "Axios", "Express.js"],
+  //   status: "Completed",
+  // },
   {
     websiteName: "Book Store Hub",
     title: "Online Bookstore Platform",
     description:
       "A modern and user-friendly platform for browsing, purchasing, and reviewing books. Features include personalized book recommendations, secure payments, and user reviews.",
     features: [
-      "Browse books by genres, authors, and bestsellers.",
-      "Personalized book recommendations based on user preferences.",
-      "User reviews and ratings for each book.",
-      "Secure online payment and order tracking.",
-      "Wishlist and cart functionality.",
-      "Responsive design for all devices.",
+      "Browse books by tags, authors and topics.",
+      "Read time tracking by graphical representation.",
+      "Wishlist and read-list functionality.",
+      // "User reviews and ratings for each book.",
     ],
     liveLink: "https://book-store-hub.netlify.app",
     sourceCode: "https://github.com/alamin6688/book-store.git",
@@ -115,13 +112,15 @@ const Works = () => {
         <h1 className="text-2xl md:text-3xl font-extrabold text-center uppercase py-4 md:py-8 text-zinc-200">
           My Latest Projects
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 xl:mt-12 xl:gap-12 pb-4 md:pb-0 animate__animated animate__zoomIn">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-16 mt-8 xl:mt-12 xl:gap-12 pb-4 md:pb-0">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card w-full h-auto bg-[#0b1129] rounded-2xl overflow-hidden relative  hover:border-[#7f48e6] hover:shadow-[0_0_30px_rgba(127,72,230,0.5)] duration-300 hover:scale-[1.05] transition-all border-4 border-[#45428d]"
+              className="card w-full h-auto bg-[#0b1129] rounded-2xl overflow-hidden relative  hover:border-[#7f48e6] hover:shadow-[0_0_30px_rgba(127,72,230,0.5)] duration-300 hover:scale-[1.05] transition-all border-4 border-[#45428d]" data-aos="flip-up" data-aos-duration="1500"
+              data-aos-delay={index * 100} // Adding delay based on index
+              data-aos-offset="200" // Adjust the offset to trigger the animation earlier or later
             >
-              <div className="card-content p-6 md:p-8 relative z-10">
+              <div className="card-content p-6 md:p-8 relative z-10 space-y-6">
                 {/* Project Title and Status */}
                 <div className="mb-4">
                   <h2
@@ -134,12 +133,12 @@ const Works = () => {
                 </div>
 
                 {/* Project Description */}
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <h3 className="text-sm font-semibold text-white mb-2">
                     Description
                   </h3>
                   <p className="text-sm text-white/70">{project.description}</p>
-                </div>
+                </div> */}
 
                 {/* Features */}
                 <div className="mb-4">
