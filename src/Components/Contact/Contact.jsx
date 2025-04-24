@@ -11,7 +11,7 @@ const Contact = () => {
           Get In Touch
         </h1>
         <div className="flex flex-col gap-8 md:flex-row items-center justify-center">
-          <div className="md:w-1/2 border-2 border-[#45428d] rounded-2xl px-4 md:px-6 lg:px-8 py-8 md:py-10 shadow-[0_0_30px_rgba(127,72,230,0.2)] w-full">
+          <div className="md:w-1/2 border-2 border-[#45428d] rounded-2xl px-4 md:px-6 lg:px-8 py-8 md:py-10 shadow-[0_0_30px_rgba(127,72,230,0.2)] w-full" data-aos="zoom-out-right" data-aos-duration="2000">
             <h1 className="text-2xl font-semibold text-zinc-200 lg:text-3xl capitalize text-center md:text-left">
               Contact me for collaboration
             </h1>
@@ -167,7 +167,7 @@ const Contact = () => {
               </ul>
             </div>
           </div>
-          <div className="pt-12 lg:w-1/2 w-full lg:mt-0 border-2 border-[#45428d] rounded-2xl p-8 shadow-[0_0_30px_rgba(127,72,230,0.2)]">
+          <div className="pt-12 lg:w-1/2 w-full lg:mt-0 border-2 border-[#45428d] rounded-2xl p-8 shadow-[0_0_30px_rgba(127,72,230,0.2)]"data-aos="zoom-out-left" data-aos-duration="2000">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <h2 className="text-2xl font-semibold text-zinc-200 ">
                 Let's Work Togther!
@@ -189,7 +189,7 @@ const Contact = () => {
                 className="block w-full bg-[#10172D] h-32 px-4 py-4 border-2 border-[#45428d] rounded-xl focus:outline-none focus:border-2 focus:border-[#7F48E6]"
               ></textarea>
 
-              <button class="w-full bg-gradient-to-r from-pink-600 to-purple-700 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+              <button class="w-full bg-gradient-to-r from-pink-600 to-purple-700 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out btn">
                 <span className="flex items-center justify-center gap-1">
                   Send Message
                   <IoIosSend className="text-xl mt-1" />

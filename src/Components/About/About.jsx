@@ -12,7 +12,7 @@ const About = () => {
           About Me
         </h1>
 
-        <div className="flex items-center justify-between mt-12">
+        <div className="flex items-center justify-between mt-12" data-aos="fade-up" data-aos-duration="1500">
           <div className="w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12  px-6">
             {/* Card */}
             <div class="flex items-center justify-center duration-300 hover:scale-[1.05] transition-all">
@@ -35,7 +35,7 @@ const About = () => {
             </div>
 
             {/* What I Do */}
-            <div className="w-full">
+            <div className="w-full" data-aos="fade-up" data-aos-duration="1500">
               <div>
                 <h1 className="text-2xl font-semibold text-zinc-200 lg:text-3xl uppercase pb-12 text-center md:text-left">
                   What I DO
@@ -75,7 +75,7 @@ const About = () => {
         <div className="px-6">
           <div className="space-y-4 mt-12 pt-14 w-full rounded-2xl">
             <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
-              <div>
+              <div data-aos="zoom-in" data-aos-duration="1500">
                 <h2 className="text-3xl lg:text-4xl bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text text-transparent font-poppins tracking-wide capitalize text-start mb-8 font-bold">
                   Why Choose Me
                 </h2>
