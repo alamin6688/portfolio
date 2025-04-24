@@ -84,7 +84,8 @@ const Skills = () => {
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className="flex flex-col items-center justify-center gap-4 bg-[#11152C] rounded-2xl overflow-hidden relative border-2 border-[#45428d] hover:border-[#7f48e6] hover:shadow-[0_0_30px_rgba(127,72,230,0.2)] duration-300 hover:scale-[1.15] transition-all p-4"
+              className="flex flex-col items-center justify-center gap-4 bg-[#11152C] rounded-2xl overflow-hidden relative border-2 border-[#45428d] hover:border-[#7f48e6] hover:shadow-[0_0_30px_rgba(127,72,230,0.2)] duration-300 hover:scale-[1.15] transition-all p-4" data-aos="zoom-in-up" data-aos-duration="1000"
+              data-aos-delay={skill.id * 100} // Adding delay based on skill id
             >
               <img src={skill.image} alt={skill.name} className="w-16" />
               <p className="text-2xl text-center tracking-wider text-zinc-200">
